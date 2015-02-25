@@ -108,7 +108,7 @@ public class MSButton
 		if (bombs.contains(this))
 			lose = true;
 		else if (countBombs(r, c) != 0)
-			setLabel(Integer.toString(countBombs(r, c)));
+			setLabel("" + (countBombs(r, c)));
 		else
 		{
 			for(int i = -1; i < 2; i++)
